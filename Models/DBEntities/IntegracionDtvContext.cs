@@ -48,6 +48,7 @@ public class IntegracionDtvContext : DbContext
 			optionsBuilder.UseSqlServer("Server=serverdb-directv.database.windows.net; Database=db-directv; Trusted_Connection=False; User Id=dtv; password=waThU$mhEuk_rK7s;");
 			optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 		}
+		optionsBuilder.UseSqlServer( optionsBuilder => { optionsBuilder.CommandTimeout(3600); });
 	}
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -490,8 +491,8 @@ public class IntegracionDtvContext : DbContext
 			entity.Property((DtvRecepSucur e) => e.SubinventariDes).HasMaxLength(50);
 			entity.Property((DtvRecepSucur e) => e.TipoDocumento).HasMaxLength(50);
             entity.Property((DtvRecepSucur e) => e.Archivo).HasMaxLength(200);
-			entity.Property((DtvRecepSucur e) => e.JsonRequest);
 			entity.Property((DtvRecepSucur e) => e.Processed).HasColumnType("bit").HasColumnName("Processed");
+			entity.Property((DtvRecepSucur e) => e.JsonRequest);
             entity.Property((DtvRecepSucur e) => e.Usuario).HasMaxLength(50).IsUnicode(unicode: false);
 		});
 		modelBuilder.Entity(delegate (EntityTypeBuilder<DtvTransOrder> entity)

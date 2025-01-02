@@ -71,4 +71,3 @@ C:\Proyectos\ProyectosGitHub\Integracion-Dtv\IntegracionOcasaDtv\obj\Debug\netco
 C:\Proyectos\ProyectosGitHub\Integracion-Dtv\IntegracionOcasaDtv\obj\Debug\netcoreapp3.1\IntegracionOcasaDtv.dll
 C:\Proyectos\ProyectosGitHub\Integracion-Dtv\IntegracionOcasaDtv\obj\Debug\netcoreapp3.1\IntegracionOcasaDtv.pdb
 C:\Proyectos\ProyectosGitHub\Integracion-Dtv\IntegracionOcasaDtv\obj\Debug\netcoreapp3.1\IntegracionOcasaDtv.genruntimeconfig.cache
-C:\Proyectos\ProyectosGitHub\Integracion-Dtv\IntegracionOcasaDtv\obj\Debug\netcoreapp3.1\IntegracionOcasaDtv.csproj.AssemblyReference.cache

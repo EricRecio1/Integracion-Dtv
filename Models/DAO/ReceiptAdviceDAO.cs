@@ -1,5 +1,6 @@
 ﻿using IntegracionOcasaDtv.Models.DBEntities;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace IntegracionOcasaDtv.Models.DAO
@@ -22,6 +23,7 @@ namespace IntegracionOcasaDtv.Models.DAO
                 .ThenInclude(x => x.DtvRecepSeries)
                 .Where(x => x.Processed == false)
                 .ToArray();
+            
         }
 
         public DtvRecepSucur Get(long id)
